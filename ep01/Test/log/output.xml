@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.12.6 on win32)" generated="20241014 00:37:45.605" rpa="false" schemaversion="3">
+<suite id="s1" name="Drag And Drop" source="C:\Users\pforc\Desktop\robotframework\ep01\Test\drag_and_drop.robot">
+<test id="s1-t1" name="Drang and drop" line="4">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://the-internet.herokuapp.com/drag_and_drop</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241014 00:37:45.815" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/drag_and_drop'.</msg>
+<status status="PASS" starttime="20241014 00:37:45.815" endtime="20241014 00:37:50.138"/>
+</kw>
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<arg>//div[@id="column-a"]</arg>
+<arg>//div[@id="column-b"]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" starttime="20241014 00:37:50.138" endtime="20241014 00:37:50.713"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241014 00:37:55.716" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20241014 00:37:50.715" endtime="20241014 00:37:55.716"/>
+</kw>
+<status status="PASS" starttime="20241014 00:37:45.815" endtime="20241014 00:37:55.717"/>
+</test>
+<status status="PASS" starttime="20241014 00:37:45.605" endtime="20241014 00:37:55.719"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Drag And Drop">Drag And Drop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

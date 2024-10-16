@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random 10-Digit Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #randomNumber {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click to Generate a Random 10-Digit Number</h1>
+    <button onclick="generateRandomNumber()">Generate Number</button>
+    <div id="randomNumber"></div>
+
+    <script>
+        function generateRandomNumber() {
+            // สุ่มตัวเลข 10 หลัก
+            const randomNum = Math.floor(Math.random() * 9000000000) + 1000000000;
+            document.getElementById('randomNumber').innerText = randomNum;
+        }
+    </script>
+
+</body>
+</html>

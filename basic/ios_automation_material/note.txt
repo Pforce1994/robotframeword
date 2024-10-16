@@ -1,0 +1,6 @@
+PATH of WDA 
+/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent
+
+
+Link for ios chain
+https://github.com/facebookarchive/WebDriverAgent/wiki/Class-Chain-Queries-Construction-Rules

@@ -1,0 +1,129 @@
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+
+        function loginSuccess() {
+            $("#create_item_form").show();
+            $("#login_form").hide();
+        }
+
+        //Function for create asset
+        var createAsset = function createAsset() {
+            var asset_name = $('#asset_name').val();
+            var asset_id = $('#asset_id').val();
+
+            var createAssetRequest = {
+                "assetId": asset_id,
+                "assetName": asset_name,
+                "assetType": 1,
+                "inUse": false
+            }
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:8082/assets",
+                data: JSON.stringify(createAssetRequest),
+                contentType: "application/json; charset=utf-8",
+                headers: { "token": localStorage.getItem("token") },
+                dataType: "json",
+                success: function (result, status, xhr) {
+                    alert("Create asset success , you can check your asset in asset list page")
+                    $.ajax({
+                    type: "GET",
+                    url: "http://localhost:8082/assets",
+                    headers: {"token": localStorage.getItem("token")},
+                    dataType: "json",
+                    success: function (result, status, xhr) {
+                        var table = $("<table border='1' style='border-collapse:collapse'><tr><th>Asset List</th></tr>");
+                        table.append("<tr><td>Asset code</td><td>Asset name</td><td>Asset in use</td></tr>");
+
+                        result.forEach(element => {
+                            table.append("<tr><td>" + element["assetId"] + "</td><td>" + element["assetName"] + "</td><td>" + element["inUse"] + "</td></tr>");
+
+                        });;
+
+                        $("#message").html(table);
+                        $("#create_item_form").hide();
+                        $("#login_form").hide();
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(xhr);
+                        alert("Result: " + status + " " + xhr.responseJSON.message);
+                    }
+                });
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr);
+                        alert("Result: " + status + " " + xhr.responseJSON.message);
+                }
+            });
+        }
+
+
+        $(document).ready(function () {
+            $("#create_item_form").hide();
+            $("#btnCreateAsset").click(createAsset);
+
+            $("#submit").click(function (e) {
+                var username = $('#username').val();
+                var password = $('#password').val();
+
+                var loginRequest = {
+                    "username": username,
+                    "password": password
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8082/login",
+                    data: JSON.stringify(loginRequest),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (result, status, xhr) {
+                        localStorage.setItem("token", result['message'])
+                        
+                        $("#create_item_form").show();
+                        $("#login_form").hide();
+
+
+
+                    },
+                    error: function (xhr, status, error) {
+                        alert("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
+                    }
+                });
+
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="create_item_form">
+        <input type="text" placeholder="Enter asset ID" id="asset_id" required><br>
+        <input type="text" placeholder="Enter asset name" id="asset_name" required><br>
+        <button type="submit" id="btnCreateAsset">Create asset</button>
+    </div>
+
+
+
+    <div id="login_form">
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="username" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="password" required>
+            <br>
+            <button type="submit" id="submit">Login</button>
+
+        </div>
+    </div>
+    <div id="message"></div>
+
+</body>
+
+</html>

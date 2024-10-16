@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.12.6 on win32)" generated="20241004 13:29:53.105" rpa="false" schemaversion="3">
+<suite id="s1" name="Ep01" source="C:\Users\pforc\Desktop\ep01">
+<suite id="s1-s1" name="Test" source="C:\Users\pforc\Desktop\ep01\Test">
+<suite id="s1-s1-s1" name="Test4" source="C:\Users\pforc\Desktop\ep01\Test\test4.robot">
+<test id="s1-s1-s1-t1" name="TRY" line="12">
+<kw name="Cont zero">
+<arg>${valus1}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>BuiltIn.Convert To String</arg>
+<arg>${num}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Convert To String" library="BuiltIn">
+<arg>${num}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" starttime="20241004 13:29:53.343" endtime="20241004 13:29:53.344"/>
+</kw>
+<msg timestamp="20241004 13:29:53.344" level="INFO">${status} = True</msg>
+<status status="PASS" starttime="20241004 13:29:53.343" endtime="20241004 13:29:53.344"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>status=${status}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241004 13:29:53.344" endtime="20241004 13:29:53.345"/>
+</kw>
+<kw name="Get Substring" library="String">
+<var>${get_string}</var>
+<arg>${num} 1</arg>
+<arg>0</arg>
+<arg>7</arg>
+<doc>Returns a substring from ``start`` index to ``end`` index.</doc>
+<msg timestamp="20241004 13:29:53.346" level="INFO">${get_string} = 1010001</msg>
+<status status="PASS" starttime="20241004 13:29:53.346" endtime="20241004 13:29:53.346"/>
+</kw>
+<status status="PASS" starttime="20241004 13:29:53.342" endtime="20241004 13:29:53.346"/>
+</kw>
+<status status="PASS" starttime="20241004 13:29:53.341" endtime="20241004 13:29:53.347"/>
+</test>
+<status status="PASS" starttime="20241004 13:29:53.133" endtime="20241004 13:29:53.348"/>
+</suite>
+<status status="PASS" starttime="20241004 13:29:53.129" endtime="20241004 13:29:53.351"/>
+</suite>
+<status status="PASS" starttime="20241004 13:29:53.109" endtime="20241004 13:29:53.352"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ep01">Ep01</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test">Ep01.Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Test4">Ep01.Test.Test4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
