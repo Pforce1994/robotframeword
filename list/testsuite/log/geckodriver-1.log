@@ -1,0 +1,28 @@
+1729518185295	geckodriver	INFO	Listening on 127.0.0.1:64087
+1729518188380	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64088" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pforc\\AppData\\Local\\Temp\\rust_mozprofileMs3atV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729518189329	Marionette	INFO	Marionette enabled
+1729518189531	Marionette	INFO	Listening on port 64098
+WebDriver BiDi listening on ws://127.0.0.1:64088
+Read port: 64098
+1729518189724	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js, line 6907: Script terminated by timeout at:
+az@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:6907:21
+bz.prototype.getWithPath/<@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:6921:89
+tGa@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:3191:238
+bz.prototype.getWithPath@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:6921:56
+get@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:6952:308
+f.attached/this.activeStoreSubscription<@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:6824:165
+g@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:5034:283
+D3a/</<@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:5634:8
+y3a/</<@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:5633:384
+Av.prototype.dispatch@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:5627:53
+f.dispatch@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:6821:35
+f.updateActiveState@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:22910:69
+f.deactivate@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:22913:168
+dxc/a.windowOnBlurFn@https://www.youtube.com/s/desktop/ee1428e3/jsbin/desktop_polymer.vflset/desktop_polymer.js:22871:201
+
+1729518210311	Marionette	INFO	Stopped listening on port 64098
+Dynamically enable window occlusion 1
