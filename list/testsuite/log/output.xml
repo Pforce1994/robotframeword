@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.12.6 on win32)" generated="20241021 23:42:52.884" rpa="false" schemaversion="3">
+<suite id="s1" name="Testlog" source="C:\Users\pforc\Desktop\robotframework\list\testsuite\testlog.robot">
+<test id="s1-t1" name="Tc01" line="5">
+<kw name="Show datas from list" library="klist">
+<arg>@{List A}</arg>
+<for flavor="IN">
+<var>${index}</var>
+<value>@{list}</value>
+<iter>
+<var name="${index}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.104" endtime="20241021 23:42:53.104"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.104" endtime="20241021 23:42:53.104"/>
+</iter>
+<iter>
+<var name="${index}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.104" endtime="20241021 23:42:53.105"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.104" endtime="20241021 23:42:53.105"/>
+</iter>
+<iter>
+<var name="${index}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.105" endtime="20241021 23:42:53.105"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.105" endtime="20241021 23:42:53.105"/>
+</iter>
+<iter>
+<var name="${index}">5</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.106" endtime="20241021 23:42:53.106"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.105" endtime="20241021 23:42:53.106"/>
+</iter>
+<iter>
+<var name="${index}">6</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.106" endtime="20241021 23:42:53.106"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.106" endtime="20241021 23:42:53.106"/>
+</iter>
+<iter>
+<var name="${index}">8</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.107" endtime="20241021 23:42:53.107"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.107" endtime="20241021 23:42:53.107"/>
+</iter>
+<iter>
+<var name="${index}">9</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.107" endtime="20241021 23:42:53.107"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.107" endtime="20241021 23:42:53.107"/>
+</iter>
+<status status="PASS" starttime="20241021 23:42:53.104" endtime="20241021 23:42:53.107"/>
+</for>
+<status status="PASS" starttime="20241021 23:42:53.103" endtime="20241021 23:42:53.107"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.103" endtime="20241021 23:42:53.108"/>
+</test>
+<test id="s1-t2" name="Tc02" line="7">
+<kw name="Show datas from list" library="klist">
+<arg>@{List B}</arg>
+<for flavor="IN">
+<var>${index}</var>
+<value>@{list}</value>
+<iter>
+<var name="${index}">0</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.109" endtime="20241021 23:42:53.110"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.109" endtime="20241021 23:42:53.110"/>
+</iter>
+<iter>
+<var name="${index}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.110" endtime="20241021 23:42:53.110"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.110" endtime="20241021 23:42:53.110"/>
+</iter>
+<iter>
+<var name="${index}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.110" endtime="20241021 23:42:53.110"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.110" endtime="20241021 23:42:53.110"/>
+</iter>
+<iter>
+<var name="${index}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.111"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.111"/>
+</iter>
+<iter>
+<var name="${index}">5</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.111"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.111"/>
+</iter>
+<iter>
+<var name="${index}">6</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.112"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.112"/>
+</iter>
+<status status="PASS" starttime="20241021 23:42:53.109" endtime="20241021 23:42:53.112"/>
+</for>
+<status status="PASS" starttime="20241021 23:42:53.109" endtime="20241021 23:42:53.112"/>
+</kw>
+<status status="PASS" starttime="20241021 23:42:53.109" endtime="20241021 23:42:53.112"/>
+</test>
+<test id="s1-t3" name="Tc03" line="9">
+<kw name="Show datas in list" library="klist">
+<arg>@{list}</arg>
+<kw name="Convert To Dictionary" library="Collections">
+<var>${value}</var>
+<arg>@{list}</arg>
+<doc>Converts the given ``item`` to a Python ``dict`` type.</doc>
+<msg timestamp="20241021 23:42:53.113" level="FAIL">Keyword 'Collections.Convert To Dictionary' expected 1 argument, got 4.</msg>
+<status status="FAIL" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.113"/>
+</kw>
+<for flavor="IN">
+<var>${index}</var>
+<value>@{list}</value>
+<iter>
+<var name="${index}"/>
+<kw name="Convert To Dictionary" library="Collections">
+<var>${value}</var>
+<arg>${index}</arg>
+<doc>Converts the given ``item`` to a Python ``dict`` type.</doc>
+<status status="NOT RUN" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.113"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.113"/>
+</kw>
+<status status="NOT RUN" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.113"/>
+</iter>
+<status status="NOT RUN" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.113"/>
+</for>
+<status status="FAIL" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.114"/>
+</kw>
+<status status="FAIL" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.114">Keyword 'Collections.Convert To Dictionary' expected 1 argument, got 4.</status>
+</test>
+<status status="FAIL" starttime="20241021 23:42:52.885" endtime="20241021 23:42:53.115"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="1" skip="0" id="s1" name="Testlog">Testlog</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20241021 23:42:53.099" level="ERROR">Error in file 'C:\Users\pforc\Desktop\robotframework\list\keyword\klist.robot' on line 4: Variable file '..variablesvlist.yml' does not exist.</msg>
+</errors>
+</robot>
