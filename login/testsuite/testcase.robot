@@ -4,7 +4,6 @@ Resource     ../keyword/keyword.robot
 Login seccess
     Open website
     # Verify page login
-    Log    Hello
     Input user
     Input pass
     Click login
