@@ -13,8 +13,8 @@ Show datas in list
     FOR    ${index}      IN    @{list}
         Log To Console  ${index}
     END
-Show datas in people
-    [Arguments]       @{list}
-    FOR    ${index}  IN     @{list}
-        Log To Console  name: ${index[name]}    age:${index[age]}    city: ${index[city]}
-    END
+# Show datas in people
+#     [Arguments]       @{list}
+#     FOR    ${index}  IN     @{list}
+#         Log To Console  name: ${index[name]}    age:${index[age]}    city: ${index[city]}
+#     END
