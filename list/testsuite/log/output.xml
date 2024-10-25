@@ -1,194 +1,1676 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.12.6 on win32)" generated="20241021 23:42:52.884" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.12.6 on win32)" generated="20241025 19:24:29.221" rpa="false" schemaversion="3">
 <suite id="s1" name="Testlog" source="C:\Users\pforc\Desktop\robotframework\list\testsuite\testlog.robot">
 <test id="s1-t1" name="Tc01" line="5">
-<kw name="Show datas from list" library="klist">
-<arg>@{List A}</arg>
-<for flavor="IN">
-<var>${index}</var>
-<value>@{list}</value>
-<iter>
-<var name="${index}">1</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.104" endtime="20241021 23:42:53.104"/>
+<kw name="Show datas from list" library="kadd">
+<var>${list}</var>
+<kw name="Create List" library="BuiltIn">
+<var>@{list}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20241025 19:24:29.443" level="INFO">@{list} = [ ]</msg>
+<status status="PASS" starttime="20241025 19:24:29.443" endtime="20241025 19:24:29.443"/>
 </kw>
-<status status="PASS" starttime="20241021 23:42:53.104" endtime="20241021 23:42:53.104"/>
-</iter>
-<iter>
-<var name="${index}">2</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.104" endtime="20241021 23:42:53.105"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.104" endtime="20241021 23:42:53.105"/>
-</iter>
-<iter>
-<var name="${index}">3</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.105" endtime="20241021 23:42:53.105"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.105" endtime="20241021 23:42:53.105"/>
-</iter>
-<iter>
-<var name="${index}">5</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.106" endtime="20241021 23:42:53.106"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.105" endtime="20241021 23:42:53.106"/>
-</iter>
-<iter>
-<var name="${index}">6</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.106" endtime="20241021 23:42:53.106"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.106" endtime="20241021 23:42:53.106"/>
-</iter>
-<iter>
-<var name="${index}">8</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.107" endtime="20241021 23:42:53.107"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.107" endtime="20241021 23:42:53.107"/>
-</iter>
-<iter>
-<var name="${index}">9</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.107" endtime="20241021 23:42:53.107"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.107" endtime="20241021 23:42:53.107"/>
-</iter>
-<status status="PASS" starttime="20241021 23:42:53.104" endtime="20241021 23:42:53.107"/>
-</for>
-<status status="PASS" starttime="20241021 23:42:53.103" endtime="20241021 23:42:53.107"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.103" endtime="20241021 23:42:53.108"/>
-</test>
-<test id="s1-t2" name="Tc02" line="7">
-<kw name="Show datas from list" library="klist">
-<arg>@{List B}</arg>
-<for flavor="IN">
-<var>${index}</var>
-<value>@{list}</value>
-<iter>
-<var name="${index}">0</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.109" endtime="20241021 23:42:53.110"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.109" endtime="20241021 23:42:53.110"/>
-</iter>
-<iter>
-<var name="${index}">1</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.110" endtime="20241021 23:42:53.110"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.110" endtime="20241021 23:42:53.110"/>
-</iter>
-<iter>
-<var name="${index}">2</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.110" endtime="20241021 23:42:53.110"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.110" endtime="20241021 23:42:53.110"/>
-</iter>
-<iter>
-<var name="${index}">3</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.111"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.111"/>
-</iter>
-<iter>
-<var name="${index}">5</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.111"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.111"/>
-</iter>
-<iter>
-<var name="${index}">6</var>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.112"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.111" endtime="20241021 23:42:53.112"/>
-</iter>
-<status status="PASS" starttime="20241021 23:42:53.109" endtime="20241021 23:42:53.112"/>
-</for>
-<status status="PASS" starttime="20241021 23:42:53.109" endtime="20241021 23:42:53.112"/>
-</kw>
-<status status="PASS" starttime="20241021 23:42:53.109" endtime="20241021 23:42:53.112"/>
-</test>
-<test id="s1-t3" name="Tc03" line="9">
-<kw name="Show datas in list" library="klist">
-<arg>@{list}</arg>
-<kw name="Convert To Dictionary" library="Collections">
-<var>${value}</var>
-<arg>@{list}</arg>
-<doc>Converts the given ``item`` to a Python ``dict`` type.</doc>
-<msg timestamp="20241021 23:42:53.113" level="FAIL">Keyword 'Collections.Convert To Dictionary' expected 1 argument, got 4.</msg>
-<status status="FAIL" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.113"/>
+<kw name="Catenate" library="BuiltIn">
+<var>${result}</var>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20241025 19:24:29.443" level="INFO">${result} = </msg>
+<status status="PASS" starttime="20241025 19:24:29.443" endtime="20241025 19:24:29.443"/>
 </kw>
 <for flavor="IN">
-<var>${index}</var>
-<value>@{list}</value>
+<var>${indexa}</var>
+<value>@{list_a}</value>
 <iter>
-<var name="${index}"/>
-<kw name="Convert To Dictionary" library="Collections">
-<var>${value}</var>
-<arg>${index}</arg>
-<doc>Converts the given ``item`` to a Python ``dict`` type.</doc>
-<status status="NOT RUN" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.113"/>
+<var name="${indexa}">1</var>
+<for flavor="IN">
+<var>${indexb}</var>
+<value>@{list_b}</value>
+<iter>
+<var name="${indexb}">3</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.444"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.444"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.444"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.444"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.444"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.444"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.444"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.443" endtime="20241025 19:24:29.444"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.443" endtime="20241025 19:24:29.444"/>
+</iter>
+<iter>
+<var name="${indexb}">2</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.444"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.444"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.445"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.445"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.445"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.445" endtime="20241025 19:24:29.445"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.445"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.445"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.444" endtime="20241025 19:24:29.445"/>
+</iter>
+<iter>
+<var name="${indexb}">1</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241025 19:24:29.446" level="INFO">${result} = 1</msg>
+<status status="PASS" starttime="20241025 19:24:29.446" endtime="20241025 19:24:29.446"/>
+</kw>
+<status status="PASS" starttime="20241025 19:24:29.445" endtime="20241025 19:24:29.446"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.446" endtime="20241025 19:24:29.446"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.446" endtime="20241025 19:24:29.446"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.445" endtime="20241025 19:24:29.446"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20241025 19:24:29.446" endtime="20241025 19:24:29.446"/>
+</kw>
+<status status="PASS" starttime="20241025 19:24:29.445" endtime="20241025 19:24:29.446"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.445" endtime="20241025 19:24:29.446"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.445" endtime="20241025 19:24:29.446"/>
+</iter>
+<iter>
+<var name="${indexb}">5</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.446" endtime="20241025 19:24:29.446"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.446" endtime="20241025 19:24:29.447"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.446" endtime="20241025 19:24:29.447"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.446" endtime="20241025 19:24:29.447"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.446" endtime="20241025 19:24:29.447"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.446" endtime="20241025 19:24:29.447"/>
+</iter>
+<iter>
+<var name="${indexb}">6</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.447"/>
+</iter>
+<iter>
+<var name="${indexb}">0</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.448"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.448"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.448"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.448"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.448"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.448"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.448"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.448"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.447" endtime="20241025 19:24:29.448"/>
+</iter>
+<status status="PASS" starttime="20241025 19:24:29.443" endtime="20241025 19:24:29.448"/>
+</for>
+<status status="PASS" starttime="20241025 19:24:29.443" endtime="20241025 19:24:29.448"/>
+</iter>
+<iter>
+<var name="${indexa}">2</var>
+<for flavor="IN">
+<var>${indexb}</var>
+<value>@{list_b}</value>
+<iter>
+<var name="${indexb}">3</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.448"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.448"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.449"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.449"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.449"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.449" endtime="20241025 19:24:29.449"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.449"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.449"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.449"/>
+</iter>
+<iter>
+<var name="${indexb}">2</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.449" endtime="20241025 19:24:29.449"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.449" endtime="20241025 19:24:29.449"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241025 19:24:29.450" level="INFO">${result} = 1,2</msg>
+<status status="PASS" starttime="20241025 19:24:29.450" endtime="20241025 19:24:29.450"/>
+</kw>
+<status status="PASS" starttime="20241025 19:24:29.450" endtime="20241025 19:24:29.450"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.449" endtime="20241025 19:24:29.450"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20241025 19:24:29.450" endtime="20241025 19:24:29.450"/>
+</kw>
+<status status="PASS" starttime="20241025 19:24:29.449" endtime="20241025 19:24:29.450"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.449" endtime="20241025 19:24:29.450"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.449" endtime="20241025 19:24:29.450"/>
+</iter>
+<iter>
+<var name="${indexb}">1</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.450" endtime="20241025 19:24:29.450"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.450" endtime="20241025 19:24:29.450"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.450" endtime="20241025 19:24:29.451"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.450" endtime="20241025 19:24:29.451"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.450" endtime="20241025 19:24:29.451"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.451"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.450" endtime="20241025 19:24:29.451"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.450" endtime="20241025 19:24:29.451"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.450" endtime="20241025 19:24:29.451"/>
+</iter>
+<iter>
+<var name="${indexb}">5</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.451"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.451"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.451"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.451"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.451"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.451"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.451"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.451"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.451"/>
+</iter>
+<iter>
+<var name="${indexb}">6</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.452"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.452"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.452"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.452"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.452"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.452"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.452"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.452"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.451" endtime="20241025 19:24:29.452"/>
+</iter>
+<iter>
+<var name="${indexb}">0</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.452"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.452"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.452"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.452"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.452"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.453" endtime="20241025 19:24:29.453"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.453"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.453"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.452" endtime="20241025 19:24:29.453"/>
+</iter>
+<status status="PASS" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.453"/>
+</for>
+<status status="PASS" starttime="20241025 19:24:29.448" endtime="20241025 19:24:29.453"/>
+</iter>
+<iter>
+<var name="${indexa}">3</var>
+<for flavor="IN">
+<var>${indexb}</var>
+<value>@{list_b}</value>
+<iter>
+<var name="${indexb}">3</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.454" endtime="20241025 19:24:29.454"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.453" endtime="20241025 19:24:29.454"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241025 19:24:29.454" level="INFO">${result} = 1,2,3</msg>
+<status status="PASS" starttime="20241025 19:24:29.454" endtime="20241025 19:24:29.454"/>
+</kw>
+<status status="PASS" starttime="20241025 19:24:29.454" endtime="20241025 19:24:29.454"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.453" endtime="20241025 19:24:29.454"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20241025 19:24:29.454" endtime="20241025 19:24:29.454"/>
+</kw>
+<status status="PASS" starttime="20241025 19:24:29.453" endtime="20241025 19:24:29.454"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.453" endtime="20241025 19:24:29.454"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.453" endtime="20241025 19:24:29.454"/>
+</iter>
+<iter>
+<var name="${indexb}">2</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.455"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.455"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.455"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.455"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.455"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.455"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.455"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.455"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.454" endtime="20241025 19:24:29.455"/>
+</iter>
+<iter>
+<var name="${indexb}">1</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.455"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.455"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.456"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.456"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.456"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.456"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.456"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.456"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.455" endtime="20241025 19:24:29.456"/>
+</iter>
+<iter>
+<var name="${indexb}">5</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.456"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.456"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.456"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.456"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.456"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.456"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.456"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.456"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.456"/>
+</iter>
+<iter>
+<var name="${indexb}">6</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.456"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.457"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.457"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.457"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.457"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.456" endtime="20241025 19:24:29.457"/>
+</iter>
+<iter>
+<var name="${indexb}">0</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.457"/>
+</iter>
+<status status="PASS" starttime="20241025 19:24:29.453" endtime="20241025 19:24:29.457"/>
+</for>
+<status status="PASS" starttime="20241025 19:24:29.453" endtime="20241025 19:24:29.457"/>
+</iter>
+<iter>
+<var name="${indexa}">5</var>
+<for flavor="IN">
+<var>${indexb}</var>
+<value>@{list_b}</value>
+<iter>
+<var name="${indexb}">3</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.458"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.458"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.458"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.458"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.458"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.458"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.458"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.458"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.458"/>
+</iter>
+<iter>
+<var name="${indexb}">2</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.458"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.458"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.459"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.459"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.459"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.459"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.459"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.459"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.458" endtime="20241025 19:24:29.459"/>
+</iter>
+<iter>
+<var name="${indexb}">1</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.459"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.459"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.459"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.459"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.459"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.459"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.459"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.459"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.459"/>
+</iter>
+<iter>
+<var name="${indexb}">5</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.460" endtime="20241025 19:24:29.460"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.460" endtime="20241025 19:24:29.460"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241025 19:24:29.461" level="INFO">${result} = 1,2,3,5</msg>
+<status status="PASS" starttime="20241025 19:24:29.460" endtime="20241025 19:24:29.461"/>
+</kw>
+<status status="PASS" starttime="20241025 19:24:29.460" endtime="20241025 19:24:29.461"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.460" endtime="20241025 19:24:29.461"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.461"/>
+</kw>
+<status status="PASS" starttime="20241025 19:24:29.460" endtime="20241025 19:24:29.461"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.461"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.459" endtime="20241025 19:24:29.461"/>
+</iter>
+<iter>
+<var name="${indexb}">6</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.461"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.461"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.461"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.461"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.461"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.461"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.461"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.461"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.461"/>
+</iter>
+<iter>
+<var name="${indexb}">0</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.462"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.462"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.462"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.462"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.462"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.462"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.462"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.462"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.461" endtime="20241025 19:24:29.462"/>
+</iter>
+<status status="PASS" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.462"/>
+</for>
+<status status="PASS" starttime="20241025 19:24:29.457" endtime="20241025 19:24:29.462"/>
+</iter>
+<iter>
+<var name="${indexa}">6</var>
+<for flavor="IN">
+<var>${indexb}</var>
+<value>@{list_b}</value>
+<iter>
+<var name="${indexb}">3</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.462"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.462"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.462"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.462"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.463"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.463"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.463"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.463"/>
+</iter>
+<iter>
+<var name="${indexb}">2</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</iter>
+<iter>
+<var name="${indexb}">1</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.463"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.464"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.464"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.464"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.464"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.464"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.464"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.463" endtime="20241025 19:24:29.464"/>
+</iter>
+<iter>
+<var name="${indexb}">5</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.464"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.464"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.464"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.464"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.464"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.464"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.464"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.464"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.464"/>
+</iter>
+<iter>
+<var name="${indexb}">6</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.465" endtime="20241025 19:24:29.465"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.465" endtime="20241025 19:24:29.465"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241025 19:24:29.465" level="INFO">${result} = 1,2,3,5,6</msg>
+<status status="PASS" starttime="20241025 19:24:29.465" endtime="20241025 19:24:29.465"/>
+</kw>
+<status status="PASS" starttime="20241025 19:24:29.465" endtime="20241025 19:24:29.465"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.465"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.466"/>
+</kw>
+<status status="PASS" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.466"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.466"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.464" endtime="20241025 19:24:29.466"/>
+</iter>
+<iter>
+<var name="${indexb}">0</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.466"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.466"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.466"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.466"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.466"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.466"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.466"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.466"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.466"/>
+</iter>
+<status status="PASS" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.466"/>
+</for>
+<status status="PASS" starttime="20241025 19:24:29.462" endtime="20241025 19:24:29.466"/>
+</iter>
+<iter>
+<var name="${indexa}">8</var>
+<for flavor="IN">
+<var>${indexb}</var>
+<value>@{list_b}</value>
+<iter>
+<var name="${indexb}">3</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.467"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.467"/>
+</iter>
+<iter>
+<var name="${indexb}">2</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.467"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.468"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.467" endtime="20241025 19:24:29.468"/>
+</iter>
+<iter>
+<var name="${indexb}">1</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.468"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.468"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.468"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.468"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.468"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.468"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.468"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.468"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.468"/>
+</iter>
+<iter>
+<var name="${indexb}">5</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.468"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.469"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.469"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.469"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.469"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.469"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.469"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.469"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.468" endtime="20241025 19:24:29.469"/>
+</iter>
+<iter>
+<var name="${indexb}">6</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.469"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.469"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.469"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.469"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.469"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.470"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.470"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.470"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.469" endtime="20241025 19:24:29.470"/>
+</iter>
+<iter>
+<var name="${indexb}">0</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.470" endtime="20241025 19:24:29.470"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.470" endtime="20241025 19:24:29.470"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.470" endtime="20241025 19:24:29.470"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.470" endtime="20241025 19:24:29.470"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.470" endtime="20241025 19:24:29.470"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.470" endtime="20241025 19:24:29.470"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.470" endtime="20241025 19:24:29.470"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.470" endtime="20241025 19:24:29.470"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.470" endtime="20241025 19:24:29.470"/>
+</iter>
+<status status="PASS" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.470"/>
+</for>
+<status status="PASS" starttime="20241025 19:24:29.466" endtime="20241025 19:24:29.470"/>
+</iter>
+<iter>
+<var name="${indexa}">9</var>
+<for flavor="IN">
+<var>${indexb}</var>
+<value>@{list_b}</value>
+<iter>
+<var name="${indexb}">3</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.471"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.471"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.471"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.471"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.471"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.471"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.471"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.471"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.471"/>
+</iter>
+<iter>
+<var name="${indexb}">2</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.472"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.472"/>
+</iter>
+<iter>
+<var name="${indexb}">1</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.472"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.472" endtime="20241025 19:24:29.473"/>
+</iter>
+<iter>
+<var name="${indexb}">5</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.473"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.473"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.473"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.473"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.473"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.473"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.473"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.473"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.473"/>
+</iter>
+<iter>
+<var name="${indexb}">6</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.474"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.474"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.474"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.474"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.474"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.473" endtime="20241025 19:24:29.474"/>
+</iter>
+<iter>
+<var name="${indexb}">0</var>
+<if>
+<branch type="IF" condition="${indexa} == ${indexb}">
+<if>
+<branch type="IF" condition="'${result}' == '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result}${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</branch>
+<branch type="ELSE IF" condition="'${result}' != '${EMPTY}'">
+<kw name="Set Variable" library="BuiltIn">
+<var>${result}</var>
+<arg>${result},${indexa}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</branch>
+<status status="NOT RUN" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</if>
+<kw name="Append To List" library="Collections">
+<arg>${list}</arg>
+<arg>${indexa}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</kw>
+<status status="NOT RUN" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</branch>
+<status status="PASS" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</if>
+<status status="PASS" starttime="20241025 19:24:29.474" endtime="20241025 19:24:29.474"/>
+</iter>
+<status status="PASS" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.474"/>
+</for>
+<status status="PASS" starttime="20241025 19:24:29.471" endtime="20241025 19:24:29.474"/>
+</iter>
+<status status="PASS" starttime="20241025 19:24:29.443" endtime="20241025 19:24:29.475"/>
+</for>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20241025 19:24:29.475" endtime="20241025 19:24:29.475"/>
+</kw>
+<msg timestamp="20241025 19:24:29.475" level="INFO">${list} = [1, 2, 3, 5, 6]</msg>
+<status status="PASS" starttime="20241025 19:24:29.443" endtime="20241025 19:24:29.475"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${index}</arg>
+<arg>${list}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.113"/>
+<status status="PASS" starttime="20241025 19:24:29.475" endtime="20241025 19:24:29.476"/>
 </kw>
-<status status="NOT RUN" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.113"/>
-</iter>
-<status status="NOT RUN" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.113"/>
-</for>
-<status status="FAIL" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.114"/>
-</kw>
-<status status="FAIL" starttime="20241021 23:42:53.113" endtime="20241021 23:42:53.114">Keyword 'Collections.Convert To Dictionary' expected 1 argument, got 4.</status>
+<status status="PASS" starttime="20241025 19:24:29.442" endtime="20241025 19:24:29.476"/>
 </test>
-<status status="FAIL" starttime="20241021 23:42:52.885" endtime="20241021 23:42:53.115"/>
+<status status="PASS" starttime="20241025 19:24:29.222" endtime="20241025 19:24:29.477"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="1" skip="0" id="s1" name="Testlog">Testlog</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testlog">Testlog</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20241021 23:42:53.099" level="ERROR">Error in file 'C:\Users\pforc\Desktop\robotframework\list\keyword\klist.robot' on line 4: Variable file '..variablesvlist.yml' does not exist.</msg>
+<msg timestamp="20241025 19:24:29.434" level="ERROR">Error in file 'C:\Users\pforc\Desktop\robotframework\list\keyword\kadd.robot' on line 5: Variable file 'C:UserspforcDesktopobotframeworklistvariablesvlist.yml' does not exist.</msg>
 </errors>
 </robot>
